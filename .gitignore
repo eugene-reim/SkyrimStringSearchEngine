@@ -11,8 +11,7 @@ __pycache__/
 *.pyc
 
 # Translation files
-skyrim_strings/original/*
-skyrim_strings/russian/*
+skyrim_strings/*
 
 # Environment variables
 .env
@@ -26,3 +25,4 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
