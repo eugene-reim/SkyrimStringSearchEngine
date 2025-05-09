@@ -1,11 +1,9 @@
-# 🏰 Skyrim Translator
-
-![Skyrim Logo](https://upload.wikimedia.org/wikipedia/ru/thumb/1/15/The_Elder_Scrolls_V_Skyrim_cover.png/274px-The_Elder_Scrolls_V_Skyrim_cover.png)
+# 🏰 Skyrim String Search Engine
 [![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.68+-green.svg)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 
-**Мощный инструмент для работы с переводами Skyrim**  
+**Инструмент для поиска по файлам перевода Skyrim**  
 🔍 Поиск переводов | 📚 База данных строк | 🚀 API интерфейс
 
 ## ✨ Основные возможности
