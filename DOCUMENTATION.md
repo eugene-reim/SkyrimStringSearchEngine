@@ -6,8 +6,7 @@
 
 1. **core/**
    - `logger.py` - Настройка системы логирования
-   - `initial_parse.py` - Первичный парсинг строк перевода
-   - `new_parser.py` - Парсер строк игры
+   - `parser.py` - Объединенный парсер строк перевода (включает функционал initial_parse и new_parser)
 
 2. **db/**
    - `handler.py` - Основной класс для работы с базой данных
@@ -24,7 +23,9 @@
 ### DBHandler (db/handler.py)
 Основной класс для работы с базой данных:
 - `save_translations()` - Сохраняет переводы в БД
-- `search_translations()` - Поиск переводов по запросу
+- `search_translations()` - Поиск переводов с поддержкой:
+  - Кириллического case-insensitive поиска
+  - Приоритета коротких строк
 - `_create_tables()` - Создает структуру БД
 
 ### API Endpoints (api/v1/endpoints.py)

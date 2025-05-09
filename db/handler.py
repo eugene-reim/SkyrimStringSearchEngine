@@ -1,9 +1,6 @@
 import sqlite3
 from pathlib import Path
-from typing import Optional, List, Dict, Tuple
-from dataclasses import asdict
-from core.models.string import String
-from enum import Enum
+from typing import List, Dict, Tuple
 
 
 class DBHandler:
@@ -175,7 +172,7 @@ class DBHandler:
             columns = [column[0] for column in cursor.description]
             return [dict(zip(columns, row)) for row in cursor.fetchall()]
 
-    def translation_exists(self, plugin_name: str) -> bool:
+    def translation_exists(self) -> bool:
         """Проверяет, есть ли записи в базе (игнорируя plugin_name)"""
         try:
             if not hasattr(self, "conn") or self.conn is None:
@@ -252,10 +249,6 @@ class DBHandler:
 
         conditions = []
         params = []
-
-        search_norm = (
-            self.normalize_search(search_query) if case_insensitive else search_query
-        )
 
         if search_in_original:
             if case_insensitive:

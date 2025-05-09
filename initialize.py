@@ -1,9 +1,6 @@
 import os
-import sqlite3
-from pathlib import Path
-from core.initial_parse import parse_all_files
+from core.parser import parse_all_files
 from core.logger import setup_logging
-from db.handler import DBHandler
 from db.handler import DBHandler
 import logging
 
@@ -85,7 +82,7 @@ def initialize_application():
 
         if need_parse:
             # Check localization files
-            data_dir = "skyrim_strings/original"
+            data_dir = "skyrim_strings"
             if not os.path.exists(data_dir):
                 logger.error(f"Localization directory not found: {data_dir}")
                 raise FileNotFoundError(f"Directory {data_dir} not found")

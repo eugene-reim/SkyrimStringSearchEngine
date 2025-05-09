@@ -11,7 +11,7 @@ __pycache__/
 *.pyc
 
 # Translation files
-skyrim_strings/*
+skyrim_strings/
 
 # Environment variables
 .env
