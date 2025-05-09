@@ -1,0 +1,28 @@
+# Database files
+database/*.db
+database/*.db-*
+
+# Log files
+logs/*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Translation files
+skyrim_strings/original/*
+skyrim_strings/russian/*
+
+# Environment variables
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
